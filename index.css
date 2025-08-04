@@ -186,3 +186,47 @@ a:hover {
     left: 260px;
 
 }
+
+
+
+@media (max-width: 1000px) {
+
+    .page{
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .p1s1, .p2s2{
+        width: 300px  !important;
+        padding: 0 !important;
+    }
+    .page-section{
+        width: fit-content;
+        position: relative;
+        left: unset;
+        top: unset;
+        margin: 20px;
+        padding: 10px;
+    }
+
+    .p2h{
+        position: relative;
+        top: unset;
+        left: unset;
+        transform: unset;
+    }
+
+    .page-section{
+        width: 600px;
+    }
+}  
+
+
+@media (max-width: 650px) {
+
+    .page-section{
+        width: 400px;
+    }
+}  
