@@ -254,14 +254,17 @@ a:hover {
         left: unset;
         top: unset;
         margin: 20px;
-        padding: 10px;
     }
     
     .info{
         position: absolute;
-        left: 50px;
+        left: 0;
         width: fit-content !important;
-        top: 20%;
+        top: 0;
+        transform: translateY(0);
+    }
+    .info:hover{
+        transform: translateY(0);
     }
 
     .p2h{
@@ -272,7 +275,16 @@ a:hover {
     }
 
     .page-section{
-        width: 600px;
+        width: 80%;
+        font-size: 1.5em;
+        padding-block:30px;
+        height: fit-content !important;
+    }
+    .p1s2 img{
+        width: 50px;
+    }
+    .p1s2{
+        height: fit-content !important;
     }
 }  
 
@@ -287,8 +299,10 @@ a:hover {
         position: absolute;
         left: 10px;
         width: fit-content !important;
-        top: 0px;
-        transform: translateY(0);
+        top: 200px !important;
+    }
+    .info:hover{
+        transform: none;
     }
 
     .info a{
