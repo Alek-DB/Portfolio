@@ -21,12 +21,14 @@ const SwitchPage = (page) => {
     page = document.getElementById(page + "-page")
     if(lastPage == page)
         return
+    page.style.display = "flex"
     page.classList.add("openPage")
     page.style.zIndex  = 2
 
     if(lastPage){
         lastPage.classList.remove("openPage")
         lastPage.style.zIndex  = 1
+        lastPage.style.display = "none"
 
     }
 

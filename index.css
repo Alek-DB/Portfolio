@@ -110,6 +110,26 @@ a:hover {
 }
 
 
+.code-section, .img-section, .img-section a{
+    display: flex;
+    align-items: center;
+}
+.img-section a, .img-section img{
+    margin: 6px;
+}
+.img-section img{
+    transition: all 0.1s;
+}
+
+.img-section img:hover{
+    transform: rotateZ(10deg);
+}
+
+.img-section a:hover{
+    text-decoration: none;
+}
+
+
 
 
 .p1s1{
@@ -122,9 +142,13 @@ a:hover {
     left:320px;
     width: 680px;
     height: 300px;
+    /* align-items: start; */
+}
+.p1s2 img{
+    width: 40px;
 }
 .p1s3{
-    width: 700px;
+    width: 520px;
     top: 320px;
     text-align: left;
     align-items: start;
@@ -147,7 +171,6 @@ a:hover {
     width: 380px;
     padding: 0;
 }
-
 .p2h{
     position: absolute;
     top: 340px;
@@ -155,7 +178,6 @@ a:hover {
     transform: translateX(-50%);
     color: white;
 }
-
 .p2s3{
     top:390px;
     width: 520px;
@@ -169,27 +191,52 @@ a:hover {
 }
 
 .p3s1{
-    left: 260px;
+    top: 470px;
+    width: 313px;
+    height: 226px;
 }
 .p3s2{
-    left: 555px;
-    height: 170px;
+    top: 320px;
+    left: 545px;
+    height: 127px;
 
 }
 .p3s3{
-    top: 190px;
-    left: 460px;
-    width: 240px;
+    top: 470px;
+    left: 343px;
+    width: 313px;
 }
 .p3s4{
-    top: 190px;
-    left: 260px;
+    top: 470px;
+    left: 690px;
+    width: 313px;
+}
 
+.info{
+    left:30px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.info:hover{
+    transform: translateY(-50%);
+}
+.info a{
+    width: 50px;
+    padding: 0;
+    margin: 5px;
+    transition: all 0.1s;
+}
+.rotate-right:hover{
+    transform: rotateZ(10deg);
+}
+.rotate-left:hover{
+    transform: rotateZ(-10deg) !important;
 }
 
 
 
-@media (max-width: 1000px) {
+
+@media (max-width: 1295px) {
 
     .page{
         width: fit-content;
@@ -203,12 +250,18 @@ a:hover {
         padding: 0 !important;
     }
     .page-section{
-        width: fit-content;
         position: relative;
         left: unset;
         top: unset;
         margin: 20px;
         padding: 10px;
+    }
+    
+    .info{
+        position: absolute;
+        left: 50px;
+        width: fit-content !important;
+        top: 20%;
     }
 
     .p2h{
@@ -228,5 +281,17 @@ a:hover {
 
     .page-section{
         width: 400px;
+    }
+
+    .info{
+        position: absolute;
+        left: 10px;
+        width: fit-content !important;
+        top: 0px;
+        transform: translateY(0);
+    }
+
+    .info a{
+        width: 40px;
     }
 }  
