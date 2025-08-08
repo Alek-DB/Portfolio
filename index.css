@@ -132,41 +132,69 @@ a:hover {
 
 
 
-.p1s1{
+._portrait{
     width: 300px;
     height: 300px;
     font-size: 1em;
     padding: 0;
 }
-.p1s2{
-    left:320px;
-    width: 680px;
-    height: 300px;
-    /* align-items: start; */
+._code{
+    top: 540px;
+    left:0px;
+    width: 1000px;
 }
-.p1s2 img{
+._code img{
     width: 40px;
 }
-.p1s3{
-    width: 520px;
-    top: 320px;
+._qui{
+    width: 400px;
+    height: 170px;
+    left: 320px;
     text-align: left;
     align-items: start;
 }
-.p1s4{
-    left:720px;
-    width: 280px;
+._education{
+    left:370px;
+    width: 300px;
     top: 320px;
+    height: 200px;
+}
+
+._contact{
+    left: 0px;
+    width: 350px;
+    height: 200px;
+    top: 320px;
+}
+._langues{
+    top: 190px;
+    left: 320px;
+    height: 110px;
+    width: 400px;
+
+}
+._competence{
+    left: 740px;
+    width: 260px;
+    height: 300px;
+
+}
+._loisirs{
+    top: 320px;
+    left: 690px;
+    width: 313px;
+    height: 200px;
 }
 
 
-.p2s1{
+
+._envergure{
     width: 600px;
     height: 318px;
     font-size: 1em;
     padding: 0;
 }
-.p2s2{
+._rockstoclimb{
     left:620px;
     width: 380px;
     padding: 0;
@@ -178,39 +206,18 @@ a:hover {
     transform: translateX(-50%);
     color: white;
 }
-.p2s3{
+._robine{
     top:390px;
-    width: 520px;
-    left:480px;
+    width: 540px;
+    left:460px;
     height: fit-content;
 }
-.p2s4{
+._crsvamic{
     top:390px;
-    width: 460px;
+    width: 440px;
     height: 222px;
 }
 
-.p3s1{
-    top: 470px;
-    width: 313px;
-    height: 226px;
-}
-.p3s2{
-    top: 320px;
-    left: 545px;
-    height: 127px;
-
-}
-.p3s3{
-    top: 470px;
-    left: 343px;
-    width: 313px;
-}
-.p3s4{
-    top: 470px;
-    left: 690px;
-    width: 313px;
-}
 
 .info{
     left:30px;
@@ -233,6 +240,30 @@ a:hover {
     transform: rotateZ(-10deg) !important;
 }
 
+.download_container{
+    background-color: #cccccc2f;
+    width: 100%;
+    height: 12%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.download_button{
+    position: absolute;
+    width: 20px;
+    margin: 5px;
+    bottom: 3px;
+    right: 0;
+}
+
+
+
+ul{
+    padding-inline: 20px;
+}
 
 
 
@@ -245,7 +276,7 @@ a:hover {
         justify-content: center;
         align-items: center;
     }
-    .p1s1, .p2s2{
+    ._portrait, ._rockstoclimb{
         width: 300px  !important;
         padding: 0 !important;
     }
@@ -280,32 +311,28 @@ a:hover {
         padding-block:30px;
         height: fit-content !important;
     }
-    .p1s2 img{
+    ._code img{
         width: 50px;
     }
-    .p1s2{
+    ._code{
         height: fit-content !important;
     }
 }  
 
 
-@media (max-width: 650px) {
-
+@media (max-width: 900px) {
     .page-section{
-        width: 400px;
+        font-size: 1.6em;
+        width: 80% !important;
     }
-
     .info{
-        position: absolute;
-        left: 10px;
         width: fit-content !important;
-        top: 200px !important;
     }
-    .info:hover{
-        transform: none;
+    ._portrait{
+        width: 50% !important;
+    }
+    .web-link{
+        width: 50%;
     }
 
-    .info a{
-        width: 40px;
-    }
-}  
+}   
