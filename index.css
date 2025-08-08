@@ -100,6 +100,7 @@ h2 {
 .job-title {
     font-weight: bold;
     margin-top: 10px;
+    text-align: center;
 }
 a {
     color: #1e3a56;
@@ -113,6 +114,10 @@ a:hover {
 .code-section, .img-section, .img-section a{
     display: flex;
     align-items: center;
+}
+.img-section{
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .img-section a, .img-section img{
     margin: 6px;
@@ -265,12 +270,16 @@ ul{
     padding-inline: 20px;
 }
 
+.page-section p{
+    padding-inline:10px;
+}
+
 
 
 @media (max-width: 1295px) {
 
     .page{
-        width: fit-content;
+        width: 95%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -321,18 +330,34 @@ ul{
 
 
 @media (max-width: 900px) {
+    h1{
+        font-size: 1.5em;
+    }
     .page-section{
         font-size: 1.6em;
-        width: 80% !important;
-    }
-    .info{
-        width: fit-content !important;
     }
     ._portrait{
         width: 50% !important;
     }
     .web-link{
-        width: 50%;
+        width: fit-content;
+        margin-top: 60px;
+    }
+    .info{
+        padding: 5px;
+        margin: 5px;
+    }
+    .info a{
+        width: 30px;
+    }
+
+    .download_container p{
+        font-size: 0.6em;
+        margin-right: 25px !important;
+    }
+    .download_button{
+        width: 15px;
+        bottom: 0;
     }
 
 }   
