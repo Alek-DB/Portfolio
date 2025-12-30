@@ -138,6 +138,17 @@ a:hover {
     text-decoration: none;
 }
 
+._education h2{
+    font-size: 20px;
+}
+.cvm, .ets{
+    font-size: 14px;
+    text-align: center;
+
+} 
+.cvm{
+    padding-bottom: 10px;
+}
 
 
 
