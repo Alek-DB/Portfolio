@@ -4,171 +4,257 @@
     <meta charset="UTF-8">
     <title>Alek Del Balso</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@500;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="img/circle.png">
     <link rel="stylesheet" href="index.css">
-    <script src="index.js"></script>
 </head>
 <body>
-    <div id="Portfolio">
-        <div id="buttons">
-            <button onclick="OnClickButton(this)" id="Home">Home</button>
-            <button onclick="OnClickButton(this)" id="Projects">Projects</button>
-            <!-- <button onclick="OnClickButton(this)" id="Info">Info</button> -->
-        </div>
-        <h1>ALEK DEL BALSO</h1>
-        <div class="page-section info">
-            <a href="https://www.linkedin.com/in/alek-del-balso/" target="_blank" class="rotate-right"> <img src="img/linkedin.png" alt="linkedin"></a>
-            <a href="https://www.instagram.com/alek_del_balso/" target="_blank" class="rotate-left"> <img src="img/instagram.png" alt="instagram"></a>
-            <a href="https://www.facebook.com/alek.delbalso" target="_blank" class="rotate-right"> <img src="img/facebook.png" alt="facebook"></a>
-            <a href="https://github.com/Alek-DB" target="_blank"  class="rotate-left"> <img src="img/github.png" alt="github"></a>
-        </div>
-            
-
-        
-        <div id="Home-page" class="page">
-
-            <div class="page-section _portrait">
-                <img src="img/portrait.jpg" alt="Alek Del Balso">
-                <a href="AlekDelBalso_CV.docx" style="position: absolute; bottom : 0; left:0; width: 100%; height: 100%;">
-                    <div class="download_container"> <p style="margin-right: 30px; color: black;">Download CV</p>
-                        <img src="img/upload.png" alt="linkedin" class="download_button">
-                    </div>
-                </a>
-            </div>
-
-
-            <div class="page-section _qui">
-                <h2>Qui suis-je</h2>
-                    <p>Passionné par le <strong>développement web</strong>, je cherche à mettre à 
-                        profit mes compétences en développement backend et frontend pour 
-                        contribuer à des projets innovants dans l'industrie des sites web.</p>
-            </div>
-
-            <div class="page-section _education">
-                <h2>ÉDUCATION</h2>
-                <div>
-                <p class="cvm">Cégep du Vieux Montréal<br><strong>Technique en informatique</strong><br>2025</p>
-                <p class="ets">École de Technologie supérieure (ÉTS) <br><strong>Baccalauréat en génie logiciel</strong><br>septembre 2025 - présent</p>
-                </div>
-            </div>
-
-
-
-
-            <div class="page-section _contact">
-                <h2>CONTACT</h2>
-                <ul>
-                    <li><span class="material-icons">location_on</span>Sainte-Catherine, Qc, Canada</li>
-                    <li><span class="material-icons">email</span><a href="mailto:alekdelbalso@gmail.com">alekdelbalso@gmail.com</a> </li>
-                    <li><span class="material-icons">phone</span>438-523-2058</li>
-                </ul>
-            </div>
-
-
-            <div class="page-section _langues">
-                <h2>LANGUES</h2>
-                <ul>
-                    <li>- Français</li>
-                    <li>- Anglais</li>
-                </ul>
-            </div>
-
-                        <div class="page-section _code">
-
-                    <div class="img-section">
-                        <img src="img/html.png" alt="html">
-                        <img src="img/css.png" alt="css">
-                        <a href="https://www.javascript.com/" target="_blank"> <img src="img/javascript.png" alt="javascript"></a>
-                        <a href="https://www.php.net/" target="_blank"> <img src="img/php.png" alt="php"></a>
-                        <a href="https://www.java.com/fr/" target="_blank"> <img src="img/java.png" alt="java"></a>
-                        <a href="https://www.python.org/" target="_blank"> <img src="img/python.png" alt="python">Python</a>
-                        <img src="img/cpp.png" alt="cpp">
-                        <img src="img/csharp.png" alt="csharp">
-                    </div>
-
-                    <div class="img-section">
-
-                        <a href="https://www.mysql.com/" target="_blank"> <img src="img/mysql.png" alt="mysql" style="width: 80px;"></a>
-                        <a href="https://www.postgresql.org/" target="_blank"> <img src="img/postgresql.png" alt="postgresql">Postgresql</a>
-                        <a href="https://www.mongodb.com/" target="_blank"> <img src="img/mongodb.png" alt="mongodb" style="width: 80px;"></a>
  
-    
-                        <a href="https://react.dev/" target="_blank"> <img src="img/react.png" alt="react">React</a>
-                        <a href="https://wordpress.com/fr/" target="_blank"> <img src="img/wordpress.png" alt="wordpress">Wordpress</a>
+<div id="app">
  
-                        <a href="https://unity.com/" target="_blank"> <img src="img/unity.png" alt="Unity">Unity</a>
-                    </div>
-            </div>
-
-
-            <div class="page-section _competence">
-                <h2>COMPÉTENCES</h2>
-                <ul>
-                    <li>- Travail en équipe</li>
-                    <li>- Esprit logique</li>
-                    <li>- Communication</li>
-                    <li>- Curiosité intellectuelle</li>
-                    <li>- Autodidacte</li>
-                </ul>
-            </div>
-
-            
-            <div class="page-section _loisirs">
-                <h2>LOISIRS</h2>
-                <ul>
-                    <li>- Course à pied</li>
-                    <li>- Activités de plein air</li>
-                    <li>- Guitare</li>
-                    <li>- Jeux vidéo</li>
-                    <li>- Escalade</li>
-                </ul>
-            </div>
-
-        </div>
-
-
-
-        <div id="Projects-page" class="page">
-            <a href="https://rockstoclimb.com/" target="_blank" class="web-link">
-                <div class="page-section _rockstoclimb">
-                    <img src="img/rockstoclimb.png" alt="RocksToClimb">
-                </div>
-            </a>
-            <div class="page-section _envergure">
-                <h2>PROJETS D’ENVERGURE</h2>
-                <p class="job-title"><a href="https://rockstoclimb.com" target="_blank">RocksToClimb.com</a> — Développeur web</p>
-                <ul>
-                    <li>- Développement du backend en PHP.</li>
-                    <li>- Participation au développement du frontend avec React.</li>
-                    <li>- Gestion des bases de données et optimisation des performances.</li>
-                    <li>- Déploiement du site web.</li>
-                </ul>
-            </div>
-
-            <h2 class="p2h">EXPÉRIENCE PROFESSIONNELLE</h2>
-            <div class="page-section _robine">
-                <p class="job-title"><a href="https://robine.app" target="_blank">Robine.app</a> <br> Technicien en maintenance de site web (WordPress)</p>
-                <p>mai 2023 - présent</p>
-                <ul>
-                    <li>- Modification via WordPress, en utilisant ACF et PHP.</li>
-                    <li>- Utilisation de HTML, CSS, JavaScript et PHP.</li>
-                    <li>- Amélioration de l’expérience utilisateur en modifiant le design et les fonctionnalités du site.</li>
-                </ul>
-            </div>
-
-            <div class="page-section _crsvamic">
-                <p class="job-title"><a href="https://crsvamic.ca/" target="_blank">CRS Vamic</a> <br>Maintenance de site web et assembleur de courroies</p>
-                <p>Été et hiver, depuis 4 ans</p>
-                <ul>
-                    <li>- Assemblage de courroies pour l’industrie de la fabrication.</li>
-                    <li>- Modifications du design et des fonctionnalités du site web (PHP, JavaScript, HTML, CSS)</li>
-                </ul>
-            </div>
-
-
-        </div>
+  <!-- ══ SIDEBAR ══ -->
+  <aside id="sidebar">
+    <div class="sidebar-top">
+      <div class="avatar-wrap">
+        <img src="img/portrait.jpg" alt="Alek Del Balso" class="avatar">
+      </div>
+      <h1 class="name">Alek Del Balso</h1>
+      <p class="tagline">Développeur logiciel full-stack</p>
+ 
+      <nav class="sidebar-nav">
+        <a href="#home"     class="nav-link active" data-page="home">Profil</a>
+        <a href="#projects" class="nav-link"         data-page="projects">Projets</a>
+      </nav>
+ 
+      <div class="contact-list">
+        <a href="mailto:alekdelbalso@gmail.com" class="contact-item">
+          <span class="material-icons">email</span>
+          <span>alekdelbalso@gmail.com</span>
+        </a>
+        <a href="tel:4385232058" class="contact-item">
+          <span class="material-icons">phone</span>
+          <span>438-523-2058</span>
+        </a>
+        <span class="contact-item">
+          <span class="material-icons">location_on</span>
+          <span>Sainte-Catherine, Qc</span>
+        </span>
+      </div>
+ 
+      <div class="social-row">
+        <a href="https://www.linkedin.com/in/alek-del-balso/" target="_blank" title="LinkedIn">
+          <img src="img/linkedin.png" alt="LinkedIn">
+        </a>
+        <a href="https://github.com/Alek-DB" target="_blank" title="GitHub">
+          <img src="img/github.png" alt="GitHub">
+        </a>
+      </div>
+ 
+      <a href="AlekDelBalso_CV.docx" class="cv-btn">
+        <span class="material-icons">download</span>
+        Télécharger le CV
+      </a>
     </div>
+  </aside>
+ 
+  <!-- ══ MOBILE HEADER ══ -->
+  <header id="mobile-header">
+    <span class="mobile-name">Alek Del Balso</span>
+    <nav class="mobile-nav">
+      <button class="mnav-btn active" data-page="home">Profil</button>
+      <button class="mnav-btn" data-page="projects">Projets</button>
+    </nav>
+  </header>
+ 
+  <!-- ══ MAIN CONTENT ══ -->
+  <main id="main">
+ 
+    <!-- ── HOME PAGE ── -->
+    <div id="page-home" class="page active-page">
+ 
+      <section class="card about-card">
+        <h2>À propos</h2>
+        <p>Passionné par le développement logiciel, je construis des solutions complètes — de l'entraînement de modèles ML au déploiement cloud — en combinant backend, frontend et infrastructure. Actuellement à l'ÉTS en génie logiciel.</p>
+      </section>
+ 
+      <div class="two-col">
+        <section class="card">
+          <h2>Formation</h2>
+          <div class="edu-item">
+            <span class="edu-year">2025 – présent</span>
+            <strong>Baccalauréat en génie logiciel</strong>
+            <span class="edu-school">École de Technologie Supérieure (ÉTS)</span>
+          </div>
+          <div class="edu-item">
+            <span class="edu-year">2025</span>
+            <strong>DEC en informatique</strong>
+            <span class="edu-school">Cégep du Vieux Montréal</span>
+          </div>
+        </section>
+ 
+        <section class="card">
+          <h2>Langues &amp; compétences</h2>
+          <div class="tag-group">
+            <span class="tag">Français (natif)</span>
+            <span class="tag">Anglais (avancé)</span>
+          </div>
+          <div class="divider-sm"></div>
+          <div class="tag-group">
+            <span class="tag soft">Travail en équipe</span>
+            <span class="tag soft">Esprit logique</span>
+            <span class="tag soft">Communication</span>
+            <span class="tag soft">Curiosité intellectuelle</span>
+            <span class="tag soft">Autodidacte</span>
+          </div>
+        </section>
+      </div>
+ 
+      <section class="card">
+        <h2>Technologies</h2>
+        <div class="tech-group">
+          <h3>Langages</h3>
+          <div class="tech-row">
+            <div class="tech-icon"><img src="img/python.png" alt="Python"><span>Python</span></div>
+            <div class="tech-icon"><img src="img/javascript.png" alt="JavaScript"><span>JavaScript</span></div>
+            <div class="tech-icon"><img src="img/html.png" alt="HTML"><span>HTML</span></div>
+            <div class="tech-icon"><img src="img/css.png" alt="CSS"><span>CSS</span></div>
+            <div class="tech-icon"><img src="img/php.png" alt="PHP"><span>PHP</span></div>
+            <div class="tech-icon"><img src="img/java.png" alt="Java"><span>Java</span></div>
+            <div class="tech-icon"><img src="img/cpp.png" alt="C++"><span>C++</span></div>
+            <div class="tech-icon"><img src="img/csharp.png" alt="C#"><span>C#</span></div>
+          </div>
+        </div>
+        <div class="tech-group">
+          <h3>Frameworks &amp; outils</h3>
+          <div class="tech-row">
+            <div class="tech-icon"><img src="img/fastapi.svg" alt="FastApi"><span>FastAPI</span></div>
+            <div class="tech-icon"><img src="img/NestJS.svg" alt="NestJs"><span>NestJS</span></div>
+            <div class="tech-icon"><img src="img/react.png" alt="React"><span>React</span></div>
+            <div class="tech-icon"><img src="img/nextJs.webp" alt="NextJs"><span>Next.js</span></div>
+            <div class="tech-icon"><img src="img/wordpress.png" alt="WordPress"><span>WordPress</span></div>
+            <div class="tech-icon"><img src="img/unity.png" alt="Unity"><span>Unity</span></div>
+          </div>
+        </div>
+        <div class="tech-group">
+          <h3>Bases de données &amp; Cloud</h3>
+          <div class="tech-row">
+            <div class="tech-icon"><img src="img/mysql.png" alt="MySQL"><span>MySQL</span></div>
+            <div class="tech-icon"><img src="img/postgresql.png" alt="PostgreSQL"><span>PostgreSQL</span></div>
+            <div class="tech-icon"><img src="img/mongodb.png" alt="MongoDB"><span>MongoDB</span></div>
+            <div class="tech-icon"><img src="img/Microsoft_Azure.svg.png" alt="Azure"><span>Azure</span></div>
+            <div class="tech-icon"><img src="img/docker.png" alt="Docker"><span>Docker</span></div>
+            <div class="tech-icon"><img src="img/bicep_logo.png" alt="Bicep"><span>Bicep</span></div>
+            <div class="tech-icon"><img src="img/Git_icon.svg.png" alt="Git"><span>Git</span></div>
+          </div>
+        </div>
+      </section>
+ 
+    </div>
+ 
+    <!-- ── PROJECTS PAGE ── -->
+    <div id="page-projects" class="page">
+ 
+      <section class="card featured-card">
+        <div class="card-header">
+          <div>
+            <span class="eyebrow">Projet — Mai 2026 – présent</span>
+            <h2 style="margin: 0;">API de Prédiction de KPIs commerciaux</h2>
+            <span class="exp-org">Quotus</span>
+          </div>
+          <div class="tag-group inline">
+            <span class="tag accent">FastAPI</span>
+            <span class="tag accent">Azure</span>
+            <span class="tag accent">ML</span>
+          </div>
+        </div>
+        <p>Solution bout-en-bout : modèles ML de séries temporelles entraînés par concessionnaire, déployés sur Azure avec un score marché composite (tendance, volatilité, momentum) et un frontend de gestion.</p>
+        <ul class="feat-list">
+          <li><strong>Backend FastAPI</strong> Prédiction multi-mois, explications et score 0–100, cache de modèles au démarrage, CPU pool parallèle</li>
+          <li><strong>Pipeline ML</strong> — backtest récursif, groupes réguliers + YTD, gestion des anomalies, déploiement automatique des modèles .pkl sur Azure Blob</li>
+          <li><strong>Infrastructure Azure</strong> — ACA, ACR, Blob Storage, Key Vault, Monitor + App Insights, Infrastructure as Code via Bicep</li>
+          <li><strong>Frontend NestJS (kpi-manager)</strong> — interface interne pour prédire, backtester, entraîner et visualiser, architecture DTOs/services/contrôleurs</li>
+        </ul>
+      </section>
+ 
+      <h3 class="section-label">Projets personnels</h3>
+ 
+      <div class="two-col">
+        <section class="card">
+          <span class="eyebrow">Automne – Hiver 2025</span>
+          <h2><a href="https://rockstoclimb.com" target="_blank">RocksToClimb.com</a></h2>
+          <p>Plateforme communautaire de partage et découverte d'escalade.</p>
+          <ul class="feat-list">
+            <li>Backend PHP, frontend React</li>
+            <li>Gestion et optimisation des bases de données</li>
+            <li>Déploiement complet du site</li>
+          </ul>
+          <div class="tag-group" style="margin-top:12px;">
+            <span class="tag">PHP</span><span class="tag">React</span><span class="tag">MySQL</span>
+          </div>
+        </section>
+ 
+        <section class="card">
+          <span class="eyebrow">2020 – 2022</span>
+          <h2><a href="https://store.steampowered.com/app/1961130/La_Vie_La_Rue/" target="_blank">La Vie La Rue</a></h2>
+          <p>Jeu vidéo développé en autodidacte avant le cégep, publié sur Steam.</p>
+          <ul class="feat-list">
+            <li>Programmation complète Unity (C#)</li>
+            <li>Mécaniques de jeu, logique applicative</li>
+            <li>Déploiement PC &amp; mobile</li>
+          </ul>
+          <div class="tag-group" style="margin-top:12px;">
+            <span class="tag">Unity</span><span class="tag">C#</span>
+          </div>
+        </section>
+      </div>
+ 
+      <h3 class="section-label">Expérience professionnelle</h3>
+ 
+      <div class="exp-list">
+        <section class="card exp-card">
+          <div class="exp-header">
+            <div>
+              <strong>Développeur informatique</strong>
+              <span class="exp-org">Cégep du Vieux Montréal</span>
+            </div>
+            <span class="exp-date">Juin – Juil. 2025 &amp; Déc. 2025 &amp; Juin - Juil. 2026</span>
+          </div>
+          <p>Module Python connecté à une API robot via Wi-Fi, permettant la programmation depuis un ordinateur sans interface physique.</p>
+          <div class="tag-group" style="margin-top:8px;"><span class="tag">Python</span><span class="tag">API REST</span><span class="tag">Wi-Fi</span></div>
+        </section>
+ 
+        <section class="card exp-card">
+          <div class="exp-header">
+            <div>
+              <strong>Technicien – Maintenance WordPress</strong>
+              <span class="exp-org"><a href="https://robine.app" target="_blank">Robine.app</a></span>
+            </div>
+            <span class="exp-date">Mai 2023 – présent</span>
+          </div>
+          <p>Personnalisation de pages, amélioration de l'UX et des fonctionnalités du site.</p>
+          <div class="tag-group" style="margin-top:8px;"><span class="tag">WordPress</span><span class="tag">ACF</span><span class="tag">PHP</span><span class="tag">JavaScript</span></div>
+        </section>
+ 
+        <section class="card exp-card">
+          <div class="exp-header">
+            <div>
+              <strong>Technicien – Maintenance de site web</strong>
+              <span class="exp-org"><a href="https://crsvamic.ca" target="_blank">CRS Vamic</a>, Candiac</span>
+            </div>
+            <span class="exp-date">2023-2025</span>
+          </div>
+          <p>Modifications du design et des fonctionnalités via interface d'administration.</p>
+          <div class="tag-group" style="margin-top:8px;"><span class="tag">PHP</span><span class="tag">JavaScript</span><span class="tag">HTML/CSS</span></div>
+        </section>
+      </div>
+ 
+    </div>
+ <canvas id="draw-canvas"></canvas>
+<button id="clear-btn" title="Effacer">✕</button>
+  </main>
+</div>
+<script src="index.js"></script>
 </body>
 </html>
